@@ -1,0 +1,126 @@
+/* body {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  div {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #dedede;
+  }
+  #demo{
+  border-color:green; 
+      
+  }
+  
+  .demo{
+      
+      border-color:blue;
+  } */
+
+/* body{
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.container{
+position: relative;
+justify-content: center;
+text-align: center;
+align-items: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+.boxTwo{
+position: absolute;
+background-color: red;
+height: 100px;
+width: 100px;
+cursor: pointer;
+
+  }
+
+  
+  p{  
+text-align: center;
+margin-top: 150px;
+  } */
+
+
+  
+/* //CounterBox clicks on js logics:-
+// 1.Count Clicks
+// Send Feedback
+// Let's make a counter using JavaScript. But it's a bit different; it increases only when you click on a box.
+// So create a big box in the center of the web page and add a counter below it.
+// When you click on the box the counter should increases by one. */
+
+body
+{
+display: flex;
+align-items: center;
+align-content: center;
+justify-content: center;
+height: 100vh;
+margin: 0;
+}
+
+.container{
+position: relative;
+margin-right: auto;
+margin-left: auto;
+
+
+}
+
+
+.Box-container{
+position:absolute;
+background-color: red;
+height: 100px;
+width: 100px;
+cursor: pointer;
+
+}
+
+
+
+p{
+
+    text-align: center;
+    margin-top: 150px;
+  
+} 
+
+
+
+/* 
+#Outer{
+
+box-sizing: border-box;
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  margin: 50px;
+  padding: 50px;
+
+} */
+
+/* #Inner{
+
+  height: 100px;
+  width: 100px;
+  background-color: cyan;
+}
+
+#search{
+
+  border: 1px solid black;
+} */

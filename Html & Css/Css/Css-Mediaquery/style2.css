@@ -1,0 +1,47 @@
+.media-content{
+
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    
+}
+@media(max-width:200px){
+
+
+    .media-content{
+
+        background-color: gold;
+    }
+}
+
+
+/* media screen changes it color  aqua to background color blueviolet  when its greater than 400px   */
+@media(max-width: 400px){
+
+
+    .media-content{
+
+        background-color:blueviolet;
+    }
+}
+
+
+
+@media(min-width:200px){
+
+
+    .media-content{
+
+        background-color: green;
+    }
+}
+
+
+@media(min-width:400px){
+
+
+    .media-content{
+
+        background-color:cyan;
+    }
+}

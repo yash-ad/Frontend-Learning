@@ -1,0 +1,30 @@
+#lightbox{
+
+    position: fixed;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    top:0;
+    left: 0;
+    transition:  1.3s ease-in-out ;
+}
+
+
+
+#lightbox:target{
+
+    height: 40%;
+    width: 40%;
+    background-color: coral;
+    top: 25%;
+    left: 25%;
+}
+
+#lightbox  p{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 40px;
+}
+

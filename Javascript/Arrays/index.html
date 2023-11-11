@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays-In-Js</title>
+</head>
+<body>
+    <div>
+    <h1>Arrays-In-Javascript</h1>
+<div>
+    <h2>What is an Array?</h2>
+
+    <p>
+    Array is a basically collection of data.
+    [Square Bracket] is called Literal.
+
+    
+<ol>
+    <li>It has become a common practice to declare arrays using Const and always declare with Const</li>
+
+    <li>In the square bracket we called elements likewise it could be String,Number or boolean.</li>
+
+    <li>Array in javascript can be of mixed data types</li>
+
+    <li>You can access elements of an array using indices 0 , 1 , 2 etc.</li>
+
+</ol>
+
+    </p>
+
+    <p>Arrays are not constants :-
+    The keyword Const is a little misleading. It does not define a constant array , it defines a constant reference to an array. Becuase of this , we can still change the elements of a constant Array.
+     Lets take an example :- 
+
+     Const myArray = [ 1 , 2  , 3 , 4 , 5 ];
+     const array = myArray;
+
+     array[5] = 6;
+
+console.log(array);
+</p>
+
+<ul>
+    <li>Arrays are mutable and Arrays can be changed.</li>
+
+    <li>Strings are immutable,Strings cannot be changed.</li>
+
+    <li>Array can hold many values under in a single name.</li>
+
+    <li>In an Array the length is always start from 1 and array index starts from 0.</li>
+
+
+</ul>
+</div>
+
+<div>
+<h2>Array Properties and Methods :- </h2>
+<p>The real strength of Javascript arrays are the built in array properties and methods :- 
+    <ol>
+        <li>toString():>
+            Converts an array to a string of comma seperated values.
+        </li>
+    
+        <li>Join():>
+            Joins all the array elements using a seperator.
+
+        </li>
+
+        <li>Pop():>
+            Removes the last element of an array and returns the removed element.
+        </li>
+
+        <li>Push():>
+            Adds a new element to the end of an array and it modifies the original array with an argument, returms the new array.
+        </li>
+
+
+        <li>Shift():>
+            Removes the first element of an array and returns it.
+        </li>
+
+
+        <li>Unshift():>
+            Adds a new element to the beginning of an array and returns new length.
+
+        </li>
+
+
+        <li>Delete():>
+            Delete is an operator its not a method, array elements can be deleted using the delete operator.
+
+        </li>
+
+        <li>Concat():>
+            Used to join arrays to the given array and returns a new array however does not change an existing array.
+        </li>
+
+        <li>Sort():>
+            This method is used to sort an array alphabetically , however we can sort the elements in an ascending order or a descending order with the help of an arrow function
+        </li>
+
+
+        <li>Reverse():>
+            The reverse method reverses the order of the element in an array.The reverse() method overwrites the original array.
+        </li>
+
+        <li>Splice():>
+            Splice can be used to add new items to an array and returns deleted items and it modifies the array and it cna be used as an argument.
+            *There are four arguments of splice 1.Position to Add , 2.No of elements to remove , 3.Elements to be added & 4.Elements to be added.
+        </li>
+
+
+        <li>Slice():>
+         Slices out a piece from an array it creates a new array and it does not modify the original array.
+        </li>
+
+
+
+    </ol>
+</div>
+
+<div>
+<h2>Looping through arrays:-</h2>
+
+<p>Arrays can be looped through using the classical javascript Forloop or through some other methods below</p>
+<ol>
+    <li>ForEachloop:-
+        Calls a function, once for each array elements and the forEach() method is not executed for empty elements.
+        Lets take an example:- 
+        Const numbers = [ 1,2,3,4,5];
+        numbers.forEach((value,index,array)=>{
+//Function logic
+        })
+
+        There are 3 arguments which function takes 1.The item values,2.The item index,3.The array itself.
+    </li>
+<br>
+    <li>forOfloop:-
+        The javascript forOf statement loops through the values of an iterable object.and it lets you loop over iterable data structures such as Arrays,Strings,Maps,Nodelists and more.
+        Lets have a look at Syntax:-
+        for(Variable of Iterable){
+
+            //Code block to be executed.
+        }
+        *Variable:-For every iteration the value of the next property is assigned to the variable.
+        *Iterable:-An object that has iterable properties.
+    </li>
+<br>
+     <li>forInloop:-
+        The javascript forIn statement loops through the properties of an object:>
+        for(Key In Object){
+
+            //Code block to be executed.
+        }
+        In javascript the forIn statement can also loop over the properties of an array.
+     </li>
+
+
+</ol>
+
+</p>
+</div>
+<div class="Map , Filter and Reduce">
+    <h2>Map,Filter and Reduce methods in Javascript</h2>
+    <ol>
+        <li>Map():>
+        <p>creates a new array by performing some operation on each array element and Map doesnot change the original array.
+           and It returns an array.
+       *Parameters:- 
+       1.Function = Required to be run for each array element.
+       2.Currentvalue = Required The value of the current element.
+       3.Index = The index of the current element its an optional.
+       4.arr = The array of the current element its an optional.
+       *Return Value = The results of a function for each array element.
+
+        </p>
+    </li>
+
+
+    <li>Filter():>
+<p>        Filters an array with value that passes a test,creates a new array and the filter method doesnot change the original array , it returns an array.
+    *Parameters:- 
+    1.Function = Required to be run for each array element.
+    2.Currentvalue = Required The value of the current element.
+    3.Index = The index of the current element its an optional.
+    4.arr = The array of the current element its an optional.
+    *Return Value = The results of a function for each array element.</p>
+    </li>
+
+<li>Reduce():>
+    <p>Reduces an array to a single value.
+        1.The Reduce () method executes a reducer function for array element.
+        2.The Reduce () method returns a single value : the functions accumulated result.
+        3.The Reduce () method does not execute the function for empty array elements.
+        4.The Reduce () method does not change the original array.
+        *Parameters:- 
+        1.Function = Required to be run for each array element.
+        2.Currentvalue = Required The value of the current element.
+        3.Index = The index of the current element its an optional.
+        4.arr = The array of the current element its an optional.
+        *Return Value = Accumulated result from the last call of callback function.
+
+
+    </p>
+</li>
+    </ol>
+
+<div class="FAQ">
+    <h2><span>Frequently Asked Question</span></h2>
+    <p><span><strong>Q1.</strong> How are filter, map and reduce different?</span></p>
+    <p><span><strong>Ans: </strong>
+        map() transforms every element in an array individually and creates a new array. 
+        filter() removes elements that are not required and creates a new array containing the ones needed. 
+        Finally, reduce() reduces all array elements into a single value.</span></p>
+
+        <p><span><strong>Q2. </strong>What is the length of arrays made using .map() in javascript?</span></p>
+        <p><span><strong>Ans: </strong>Since map() individually transforms all elements of an array to create a new array, the length of the new array is the same as that of the original one.</span></p>
+
+        <p><span><strong>Q3.</strong> Does .filter() create new arrays of the same length as the previous one?</span></p>
+        <p><span><strong>Ans:</strong> Filter removes the unrequired elements while creating a new array and only includes the ones necessary. Therefore, the length of the new array is usually lesser than that of the original one.</span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+ <script src="./Practice_Set on Arrays.js"></script>   
+</body>
+</html>
+
+

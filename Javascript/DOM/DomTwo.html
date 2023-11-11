@@ -1,0 +1,54 @@
+<!-- 
+child clicked parent clicked -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Event Bubbling</title>
+</head>
+<body>
+  <div id="parent">
+    <button id="child">Child</button>
+  </div>
+  <script>
+    let parent = document.querySelector('#parent');
+      parent.addEventListener('click', function(){
+        alert("Parent clicked");
+      });
+    let child = document.querySelector('#child');
+      child.addEventListener('click', function(Event){
+       alert("Child clicked");
+    
+
+      });
+  </script>
+</body>
+</html> -->
+
+
+
+<!-- What is the output of following code? -->
+<!DOCTYPE html>
+<html>    
+<head>
+  <title>Event Bubbling</title>
+</head>
+<body>
+  <div id="parent">
+    <button id="child">Child</button>
+  </div>
+  <script>
+    let parent = document.querySelector('#parent');
+      parent.addEventListener('click', function(e){
+        alert("Parent clicked");
+      });
+    let child = document.querySelector('#child');
+      child.addEventListener('click', function(e){
+        alert("Child clicked");
+        e.stopPropagation();
+      });
+
+      // Child clicked because of e.stopPropagation();
+  </script>
+</body>
+</html>
+

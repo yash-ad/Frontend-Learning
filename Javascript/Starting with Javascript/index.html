@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional statements</title>
+</head>
+<body>
+    <div class="Js-conditional-statements">
+        <p>In javascript there are pieces of code called conditionals and developers can use them to run the code conditionally.</p>
+
+<h1>If-Statement</h1>
+<p>The if statement checks a condition and will execute a code if the condition is met or True.
+</p>
+
+
+<h1>If-Else statement</h1>
+<p>This statement handles both outcomes of our conditional request using the else keyword,If condition is true, do something,if its false do something else.
+An if statement can be used to run code based on a condition being True.
+</p>
+
+
+
+<h2>You need to execute the code based on a certain condition being either True or False.which of the following types of statements can you use to complete the task.A conditionn statement</h2>
+<h3>In computer programming,there may arise situations where you have to run a block of code among more than one alternatives.</h3>
+<div.syntax-1>
+    [Syntax]
+    if(Condition)
+    {
+    
+    // Block of code if condition is True;
+    
+    
+    }
+    else
+    {
+    
+        //Block of code if condition is False;
+    }
+</div.syntax>
+
+
+<h2>Important Notes</h2>
+<p>In javscript we have the following conditional statements:-
+    <ol>
+        <li>Use If to specify a block of code to be executed , if a specified condition is True.</li>
+ 
+        <li>Use Else to specify a block of code to be executed,if the first condition if False.</li>
+
+        <li>If-Else is better suited if there is a binary choice in the condition.</li>
+
+        <li>If you need to make sure that multiple conditons are True in an if statement,You can do using the && Operator.</li>
+
+        <li>In javascript , the correct syntax of the greater than or equal to Operator is >= </li>
+
+    </ol>
+
+</p>
+
+<h1>Switch-Statement</h1>
+<p>In javascript switch statement is used for decision making.The switch statement evaluates an expression and executes the corrresponding body that matches the expressions result.
+<div class="syntax-2">
+[Syntax]
+switch(Variable/Expression)
+{
+    case value 1 :
+    //Body of case 1
+    break;
+
+    case value 2 :
+    //Body of case 2
+    break;
+
+    case value 3 :
+    //Body of value 3
+    break;
+
+    case value so on :
+    //Body of case value So on 
+    break;
+
+    default :
+    //Body of default 
+    
+    }
+</div>
+<h2>Important Notes</h2>
+<p>The switch statement is used to perform different actions based on diferrent conditions.</p>
+<ol>
+    <li>Use switch to specify many alternative block of code to be executed.</li>
+
+    <li>The switch expression is evaluated once.</li>
+
+    <li>The value of the expression is compared with the values of each case.</li>
+
+<li>If there is a match , the associated block of code is executed.</li>
+
+<li>If there is no match, the default code block is executed.</li>
+
+</ol>
+</p>
+<h3>The break keyword:-</h3>
+<p>When javascript reaches a break keyword, it breaks out of the switch block.this will stop the execution inside the switch block.it is not necessary to break the last case in a switch block.the block ends there anyway.
+dont forget to add a break at the very end of each case in a switch statement
+</p>
+
+
+<h3>The default keyword:-</h3>
+<p>The default keyword specifies the code to run if there is no case match.
+
+if default is not the lastcase in the switch block,REMEMBER to end the default case with a break.
+</p>
+<p>The break statement is optional.if the break statement is encountered,the switch statement ends.
+    if the the break statement is not used,the casesafter the matching case are also executed.
+the default clause is also an optional.
+**Multiple cases in switch statements:-In a javascript switch statement,cases can be grouped to share the same code.
+</p>
+</div>
+
+<div class="Javscript-loops">
+    <p>Loop that means a structure , a series , or process the end of which is connected to the beginning.</p>
+<h1>What are loops in javascript?</h1>
+<p>In programming language , loops are used to repeat a block of code under certain condition.For example if you want to show a message 100 times,then you can use a loop.</p>
+
+<p>Javascript developers use loops to continually execute and repeated blocks of code until a caetain condition is satisfied.</p>
+<ul.important-notes>
+    <li>Loops can execute a block of code a number of times.</li>
+    <li>Loops are handly,if you want to run a code the same over and over again , each time with a diferrent value.</li>
+</ul>
+
+<h2>Different Kinds of loops:-</h2>
+<p>Javascript supports different kinds of loops.
+    <ol>
+        <li>for:- Loops through a block of code a number of times.</li>
+<li>for/In:-Loops through the properties of an object.</li>
+<li>for/of:-Loops through the values of an iterable object.</li>
+<li>Whileloop:-Loops through a block of code while a specified condition is True.</li>
+<li>doWhileloop:- Also loops through a block of code  while a specified condition is True.</li>
+ </ol>
+</p>
+<div class="forLoop">
+<h1>The for-Loop</h1>
+<p>for is a declaration keyword,and the counter is a variable which is typically named i for iterator.The for statements creates a loop with 3 optional terms or expressions.</p>
+<p>For loops are essentially trying to iterate to run a piece of code many many times.</p>
+<div class="forloopSyntax">
+    for(Intialexpression(Intialization) ; Condition ; update expression(Iteration))
+    {
+
+
+        //forLoop body code to be executed;
+    }
+
+</div>
+<ol>
+
+    <li>Expression 1 is executed (one time) before the execution of the code block.
+        Ofcourse you can intiate many values in expression 1(Seperated by comma)
+    </li>
+<li>Expression 2 defines the condition for executing the code block
+    often expression 2 is used to evaluate the condition of the intial variable.
+If expression 2 returns True,the loop will start over again, and if returns false,the loop will end
+</li>
+
+<li>Expression 3 which is an updateexpression (everytime) after the code block has been executed.
+An expression 3 can do anything like Negative increment-- OR positive increment(i++) or anything else.
+</li>
+
+</ol>
+
+<h2>Loopscope</h2>
+<p><ol>
+    <li>Using var in a loop:- 
+        Using var,the variable declared in the loop redeclares the variable outside the loop.
+    </li>
+
+    <li>Using let in a loop:-
+Using let,the variable declared in the loop cannot be redeclare the variable outside the loop.
+when let is declared the variable.
+    </li>
+
+
+
+
+</ol></p>
+</div>
+
+<div class="whileLoop">
+    <h1>Javascript while-Loop</h1>
+    <p>Code that repeats as long as specified condition is TRUE.
+    </p>
+    <p>A while-loop will keep looping through a code block as long as specified condition is True.</p>
+<p>Loops are common way to automate code repetition</p>
+<div class="while-LoopSyntax">
+    <h2>The syntax of the while-Loop is</h2>
+     
+    Variable declaration
+
+    while(Condition)
+    {
+     //Body of Loop
+
+     //Increment or decrement
+
+
+    }
+</div>
+<h3>Whats the difference between for Vs while-Loop?</h3>
+<p>A for-Loop is usually used when the number of iterations is known.& 
+   A while-Loop and do-whileLoop are usually used when the number of iterations are unknown.
+</p>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="do-Whileloop">
+    <p>Do-while loop is similar to the whileloop the only differnce is that in do-while loop,the body of loop is executed at least once.
+        Do-while loop first executes the body then test the condition either True or False.
+    </p>
+    <div class="doWhileloopSyntax">
+        do{
+
+//Body of loop
+
+        }
+        while(condition)
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="Nestedloop">
+<p>Outerloop and Innerloop
+    You are running multiple nested loops within your javascript code.could these nested loops cause performance issues with your code.True,the more nested loops tehre are the slower your code will run.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+    
+</div>
+    <script src="Exercise with condoitional and loops.js"></script>
+</body>
+</html>

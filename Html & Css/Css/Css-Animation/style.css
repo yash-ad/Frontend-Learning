@@ -1,0 +1,99 @@
+.container1{
+
+    position:absolute;
+    width: 200px;
+    height: 200px;
+    top: 20%;
+    left: 20%;
+    background-color: crimson;
+    /*transform:scale(1.5,3.4)8*/
+    /*transform:translate(10%,100px)*/
+    /*transition: 1s ease;*/
+    /*transition: 1s ease-in;*/
+    transition:  height 1s ease-in-out 0.3s;
+    
+}
+.container1:hover{
+height: 450px;
+width: 450px ;
+   
+}
+
+
+.container2{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    background-color:aquamarine;
+    /*transform:scale(1.5,3.4)8*/
+    /*transform:translate(10%,100px)*/
+    /*transition: 1s ease;*/
+    /*transition: 1s ease-in;*/
+    transition:   1s ease-in-out 0.3s;
+
+}
+
+
+.container2:hover{
+    transform: scale(1.5) translate(200px);
+       
+    }
+
+
+
+
+
+.container3{
+
+
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    top: 40%;
+    left: 30%;
+    background-color:darkmagenta;
+    /*transform:scale(1.5,3.4)8*/
+    /*transform:translate(10%,100px)*/
+    /*transition: 1s ease;*/
+    /*transition: 1s ease-in;*/
+    transition:  1s ease-in-out;
+    transform: scale(1.5);
+
+
+}
+ 
+.container3:hover{
+
+    transform:
+}
+
+
+#div1{
+    background-color: brown;
+    height: 200px;
+    width: 200px;
+}
+
+#div2{
+
+    background-color: purple;
+    height: 100px;
+    width: 100px;
+    transform: translateY(100px);
+    animation:changeShape 1s ease-in-out infinite alternate;
+}
+
+
+@keyframes changeShape{
+ from{
+    border-radius: 0%;
+ }
+
+ to {
+
+    border-radius: 50%;
+ }
+
+}

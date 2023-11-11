@@ -1,0 +1,51 @@
+
+.Box{
+ 
+    width: 32%;
+    height: 300px;
+    margin: 0.1%;
+   
+
+}
+#O{
+    background-color: #ff8989;
+
+
+}
+
+#N{
+
+    background-color:#88f7ce;
+
+ 
+
+    
+}
+
+#E{
+
+    background-color: #e29df2;
+}
+
+
+/* On screens above 600px they should appear next to each other .*/
+
+
+@media (min-width : 600px)
+{
+    .Box{
+        display: inline-block;
+        
+    }
+}
+
+@media (max-width :600px)
+{
+.Box{
+width: 100%;
+}
+    
+}
+
+
+
