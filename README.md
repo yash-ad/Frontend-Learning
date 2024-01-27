@@ -1,2 +1,2 @@
 # Frontend-Learning
-Frontend-Learning-Repository with Html, CSS, Javascript, and React.
+Frontend-Learning-Repository with Html, CSS, Javascr and React.
