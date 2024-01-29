@@ -188,5 +188,3 @@ counter.textContent = count;
 //     alert("keyDown");
 // });
 
-
-dhbchfbvslhdshcvbdjvkcdjskabgcjdbvj.adcgbqdiucb.,ds
