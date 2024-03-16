@@ -50,7 +50,16 @@ let objTwo = {
 
 
 
-///.Apply():-
+///.2)Apply():-
 //Apply method is quite similar to the call method however the minor difference is that call method takes arguments seperately and apply method taoes arguments as an array.
-getDetails.apply(obj,["Pune","Maharashtra","India"]);
-getDetails.apply(objTwo,["Pune","Maharashtra","India"]);
+// getDetails.apply(obj,["Pune","Maharashtra","India"]);
+// getDetails.apply(objTwo,["Pune","Maharashtra","India"]);
+
+
+///.3)Bind():-
+//Bind method returns a new function,where the value of 'this` keyword will be bound to owner object which is provided as a paramter.
+
+let bindFunctionOne = getDetails.bind(obj,"Pune","Maharashtra","India");
+bindFunctionOne();
+let bindFunctionTwo = getDetails.bind(objTwo,"Karvenagar","Maharashtra","India");
+bindFunctionTwo();
