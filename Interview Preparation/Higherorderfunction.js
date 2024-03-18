@@ -20,13 +20,13 @@
 //Lets take an example of Higher order function in js:-
 
 const radius = [1,2,3,4,5];
-console.log(radius);
+// console.log(radius);
 
 //Lets calculate the area of radius:-
 //The formula is Circle: Area = πr^2 :-
 // IN javscript the formula of area of radius is Math.PI*radius*radius;
 const area = (radius)=>{
-    return Math.PI*radius*radius;
+    return Math.PI * radius * radius;
 }
 
 //Lets calculate the Diameter of radius:-
@@ -55,9 +55,38 @@ for(let i = 0; i <= array.length; i++ ){
 }
 return output;
 }
-console.log(calculateOperation(radius,area)); //Calculating for the area of a radius.
-console.log(calculateOperation(radius,diameter)); //calculating for the diameter.
-console.log(calculateOperation(radius,circumference));
+// console.log(calculateOperation(radius,area)); //Calculating for the area of a radius.
+// console.log(calculateOperation(radius,diameter)); //calculating for the diameter.
+// console.log(calculateOperation(radius,circumference));
+//Similarly we can write the code using map:- simplu reducing lines of code and result in a one single line:-
+console.log(radius.map(area)); //Indeed , the answer is similar nothing change into it.
+
+
+
+
+
+//Example Two:-
+
+const radiusTwo = [5,6,7,8];
+
+
+const areaTwo = (logic)=>{
+return Math.PI*logic*logic
+};
+
+
+const diameterTwo = (logic)=>{
+    return 2 * logic;
+};
+
+const circumferenceTwo = (logic)=>{
+    return 2 * Math.PI * logic
+}
+
+//lets get an above output simply using Map() to iterate over an array and returns a new array ;-
+console.log(radiusTwo.map(areaTwo));
+console.log(radiusTwo.map(diameterTwo));
+console.log(radiusTwo.map(circumferenceTwo));
 
 
 
