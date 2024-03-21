@@ -48,9 +48,9 @@ const familyMembers = [{
 ];
 
 
-const result = familyMembers.map((x)=> x.firstName + " " + x.lastName + " age:" + x.age);
+// const result = familyMembers.map((x)=> x.firstName + " " + x.lastName + " age:" + x.age);
 
-console.log(result);
+// console.log(result);
 // [
 //     'Yash Dandnaik age:25',
 //     'Siddhi Dandnaik age:23',
@@ -174,5 +174,20 @@ console.log(output); //5
 
 
 
+//Lets take an example and use this with the Reduce() function:-
 
+ //Reduce() function in javascipt takes two arguments within the first is the callback functiopn and the second is an optional initial value which is the starting value of accumulator.
+ const result = familyMembers.reduce((acc, curr) => {
+  acc.push(`${curr.firstName} ${curr.lastName} is ${curr.age} years old`);
+  return acc;
+}, []);
+0
+// console.log(result);
+
+// [
+//   'Yash Dandnaik is 25 years old',
+//   'Siddhi Dandnaik is 23 years old',
+//   'Avinash Dandnaik is 55 years old',
+//   'Vaijayanti Dandnaik is 50 years old'
+// ]
 
